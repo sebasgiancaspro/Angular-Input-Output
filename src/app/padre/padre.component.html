@@ -1,0 +1,14 @@
+<div class="padre">
+
+    <h3>COMPONENTE PADRE</h3>
+    <p> hola soy el componente padre </p>
+
+    <button (click)="eventoClick('Hola este msj viene del BOTON PADRE')">Enviar</button>
+    <button onClick="document.location.reload();">Borrar</button>
+
+    <app-hijo [texto]="' Hola este msj viene desde el padre'" 
+              [textoBtn]="boton" 
+              (decir)="escuchar($event)">
+    </app-hijo>
+    
+</div>
